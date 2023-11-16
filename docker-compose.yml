@@ -1,0 +1,14 @@
+version: '1'
+services:
+    detection:
+      image: detection_server
+      tty: true               # equivalent for -t
+      stdin_open: true        # equivalent for -i
+      ports:
+        - 80:8000
+      volumes:
+        # path to data
+        - type: bind
+          source: ./data/
+          target: /app/data/
+
