@@ -4,6 +4,7 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Annotated, Literal
 
+
 import cv2
 import numpy as np
 import torch
