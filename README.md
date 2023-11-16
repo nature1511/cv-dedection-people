@@ -23,7 +23,7 @@
 ### Запуск через докер контейнер
 
     - Создать docker image, используя docker build  -t detection_server .
-    - Запуск docker container, используяdocker run --rm -it -p 80:8000 --name detection detection_server
+    - Запуск docker container, используя docker run --rm -it -p 80:8000 --name detection detection_server
     - Перейти http://127.0.0.1:80/docs для просмотра API
 
     Если необходимо произвести детекцию нескольких файлов, в docker-compose.yml указать пусть к папке с данными.
